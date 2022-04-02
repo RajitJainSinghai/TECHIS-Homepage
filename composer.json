@@ -1,0 +1,10 @@
+{
+  "name": "techis/website",
+  "authors": [
+    {
+      "name": "Hayato",
+      "email": "kato@techis.jp"
+    }
+  ],
+  "require": {}
+}

@@ -1,0 +1,79 @@
+// media query
+@mixin media($breakpoint) {
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: $sizes-xl) {
+      @content;
+    }
+  } @else if $breakpoint == tb {
+    @media only screen and (max-width: $sizes-l) {
+      @content;
+    }
+  } @else if $breakpoint == sp {
+    @media only screen and (max-width: $sizes-m) {
+      @content;
+    }
+  }
+}
+
+// btn
+@mixin btn($w: 290px, $type: arrow) {
+  @if $type == arrow {
+    & {
+      width: $w;
+      height: 60px;
+      border-radius: 6px;
+      font-size: $font-sizes-s;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $colors-green;
+      line-height: 1.25;
+      &:after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 13px;
+        background: url(../../assets/img/icon-arrow-right.svg) no-repeat;
+        background-size: contain;
+        margin-left: 28px;
+      }
+    }
+  } @else if $type == second {
+    & {
+      width: $w;
+      height: 60px;
+      border-radius: 6px;
+      font-size: $font-sizes-s;
+      color: $colors-green;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      line-height: 1.25;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      &:after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 13px;
+        background: url(../../assets/img/icon-arrow-right-g.svg) no-repeat;
+        background-size: contain;
+        margin-left: 28px;
+      }
+    }
+  } @else if $type == noarrow {
+    & {
+      width: $w;
+      height: 60px;
+      border-radius: 6px;
+      font-size: $font-sizes-s;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $colors-green;
+      line-height: 1.25;
+    }
+  }
+}
