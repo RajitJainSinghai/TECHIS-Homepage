@@ -687,6 +687,32 @@
       font-size: $font-sizes-xs;
     }
   }
+
+  /******** vedeo*************/
+  .vedeo {
+    position: relative;
+    &__headings {
+      width: 100%;
+      font-size: $font-sizes-xl;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__playVedeo {
+      width: 80%;
+      margin: 0 auto;
+    }
+    video#myVideo {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .home .vedeo img.playButton {
+      position: absolute;
+      top: 20vw;
+      left: 45vw;
+    }
+  }
+
   /********* Section_alumini**********/
   .alumni {
     &__in {
@@ -1181,6 +1207,12 @@
         margin-bottom: 24px;
       }
     }
+    img.playButton {
+      position: absolute;
+      top: 20vw;
+      left: 45vw;
+      width: 85px;
+    }
     .alumni {
       &__in {
         padding-bottom: 0;
@@ -1564,6 +1596,12 @@
       &__text {
         font-size: $font-sizes-m;
       }
+    }
+    img.playButton {
+      position: absolute;
+      top: 28vw;
+      left: 46vw;
+      width: 45px;
     }
     .alumni {
       &__ttl {

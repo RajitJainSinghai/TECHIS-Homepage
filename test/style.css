@@ -393,6 +393,7 @@ img {
   /********** Section-curriculam **************/
   /****** Section-PortFolio**********/
   /********* Section-Skills***************/
+  /******** vedeo*************/
   /********* Section_alumini**********/
   /*********** Section-Eligibillity***********/
   /******** Section_book ***********/
@@ -1267,6 +1268,34 @@ img {
   font-size: 14px;
 }
 
+.home .vedeo {
+  position: relative;
+}
+
+.home .vedeo__headings {
+  width: 100%;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home .vedeo__playVedeo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home .vedeo video#myVideo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home .vedeo .home .vedeo img.playButton {
+  position: absolute;
+  top: 20vw;
+  left: 45vw;
+}
+
 .home .alumni__in {
   width: 90%;
   max-width: 1400px;
@@ -1908,6 +1937,12 @@ img {
     width: 48%;
     margin-bottom: 24px;
   }
+  .home img.playButton {
+    position: absolute;
+    top: 20vw;
+    left: 45vw;
+    width: 85px;
+  }
   .home .alumni__in {
     padding-bottom: 0;
   }
@@ -2303,6 +2338,12 @@ img {
   }
   .home .skills__text {
     font-size: 18px;
+  }
+  .home img.playButton {
+    position: absolute;
+    top: 28vw;
+    left: 46vw;
+    width: 45px;
   }
   .home .alumni__ttl {
     font-size: 34px;
